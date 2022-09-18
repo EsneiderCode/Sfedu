@@ -1,0 +1,210 @@
+    @font-face {
+        font-family: Myriad Pro;
+        src: local('MyriadPro'), url("https://ictis.sfedu.ru/wp-content/themes/my_theme/fonts/MYRIADPRO-REGULAR.woff") format('truetype');
+    }
+
+    @font-face {
+        font-family: Roboto Regular;
+        src: local('RobotoRegular'), url("https://ictis.sfedu.ru/wp-content/themes/my_theme/fonts/Roboto-Regular.ttf") format('truetype');
+    }
+
+    html {
+        margin-top: 0 !important;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        background: #BCBCBC;
+        min-height: 100%;
+    }
+
+    .footer-container {
+        width: auto;
+        height: auto;
+        padding: 32px;
+        position: relative;
+        bottom: 0;
+        margin-left: 333px;
+        background: #EEEEEE;
+        font-size: 16px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 30px 0;
+    }
+
+    .footer-contact-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 200px;
+    }
+
+    .footer-credits {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .footer-credits-company {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px
+    }
+
+    .footer-social-network {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #counter-audience{
+        width:88px;
+        height:31px;
+    }
+
+    .footer-social-network a {
+        padding: 0 10px;
+        font-size: 12px;
+
+    }
+
+    .footer-contact-address-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    hr {
+        border: 1px solid rgba(10, 65, 120, 0.3);
+        width: 100%;
+    }
+    
+    .info-web{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .footer-web-dev a {
+        color: rgba(21, 67, 133, 1);
+        text-decoration: none;
+    }
+
+    .sideapp-calendar {
+        color: #154385;
+    }
+
+    img {
+        /*height: 80px;*/
+    }
+
+    .footer-social-network a img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .call-number {
+        text-decoration: none;
+    }
+
+    .send-email {
+        text-decoration: none;
+    }
+
+    .teleg-icon {
+        margin-right: 10px;
+    }
+
+    .icon-ictib {
+        width: 113px;
+        height: 54px;
+    }
+
+    .footer-contact-map {
+        color: rgba(21, 67, 133, 1);
+        text-decoration: none;
+    }
+
+    @media screen and (max-width:600px) {
+        .footer-container {
+            margin-left: 0 !important;
+        }
+
+        .footer-contact-logo {
+            display: none;
+        }
+
+        .footer-contact {
+            flex-direction: column-reverse
+        }
+
+        .footer-contact-container {
+            margin-right: 0;
+            align-items: center;
+        }
+
+        .footer-contact-container span span {
+            color: rgb(93, 95, 340);
+        }
+
+        .footer-contact-container span:nth-child(2) {
+            margin-top: 10px;
+        }
+
+        .footer-contact-address-container {
+            margin-top: 80px;
+            align-items: center;
+        }
+
+        .footer-contact-map {
+            color: rgb(93, 95, 340);
+        }
+
+        .footer-credits-company {
+            align-items: center;
+        }
+
+        .footer-web-dev a {
+            color: rgb(93, 95, 340);
+        }
+
+        .footer-credits {
+            display: block;
+        }
+
+        .footer-social-network {
+            position: absolute;
+            top: 94px;
+            left: 95px;
+        }
+
+        .footer-copyright {
+            text-align: center;
+        }
+        
+        .info-web{
+            position:relative;
+            top:-20px;
+        }
+        
+        .info-web span {
+        text-align:center;
+        }
+    }

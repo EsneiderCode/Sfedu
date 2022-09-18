@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Myriad Pro;
+    src: local('MyriadPro'), url("https://ictis.sfedu.ru/wp-content/themes/my_theme/fonts/MYRIADPRO-REGULAR.woff") format('truetype');
+}
+
+@font-face {
+    font-family: Roboto Regular;
+    src: local('RobotoRegular'), url("https://ictis.sfedu.ru/wp-content/themes/my_theme/fonts/Roboto-Regular.ttf") format('truetype');
+}
+
+html {
+    margin-top: 0 !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Myriad Pro;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: #BCBCBC;
+    min-height: 100%;
+    overflow-x:hidden;
+}
+
+.principal-container-department{
+    position: absolute;
+    width: 1368px;
+    min-height: 100vh;
+}
+
+.content-container{
+    position: relative;
+    width: 1035px;
+    min-height: 100vh;
+    left: 333px;
+    top: 30px;
+    padding: 32px;
+    background: white;
+}
+
+ul{
+    margin-bottom:58px;
+}
+
+.li-department{
+    list-style: none;
+    width:100%;
+    position:relative;
+    padding:18px 16px;
+    background: #F6F6F6;
+    margin-bottom:32px;
+    display:flex;
+    display:row;
+    align-items: center;
+}
+
+.li-department span{
+    position:absolute;
+    left:0;
+    height:100%;
+}
+
+.li-department:last-child{
+    margin-bottom:0;
+}
+
+.icon-small {
+    width: 24px;
+    height: 24px;
+    margin-right:12px;
+}
+
+
+.title-departments {
+    font-family: Myriad Pro;
+    font-size: 30px;
+    color: #154385;
+    margin-bottom:32px;
+    font-weight:300;
+}
+
+.color-department1{
+    background: #95C11E;
+    width:8px;
+}
+
+.link-department{
+    text-decoration:none;
+    color:#101010;
+}
+
+.color-department2{
+    background: #95C11E;
+    width:8px;
+}
+
+.color-department3{
+    background: #6CBC81;
+    width:8px;
+}
+
+.color-department4{
+    background: #6CBC81;
+    width:8px;
+}
+
+.color-department5{
+    background: #619E60;
+    width:8px;
+}
+
+.color-department6{
+    background: #619E60;
+    width:8px;
+}
+
+.color-department7{
+    background: #1D70B7;
+    width:8px;
+}
+
+.color-department8{
+    background: #1D70B7;
+    width:8px;
+}
+
+.color-department9{
+    background: #254D9B;
+    width:8px;
+}
+
+.color-department10{
+    background: #254D9B;
+    width:8px;
+}
+
+.color-department11{
+    background: #2C2E83;
+    width:8px;
+}
+
+@media screen and (max-width:600px) {
+
+    .content-container, .principal-container-department {
+        width:376px;
+    }
+
+    .content-container{
+        left:0;
+        padding:30px 16px 16px 16px;
+        top:80px;
+        margin-bottom:42px;
+    }
+
+    .title-departments{
+        margin-bottom:24px;
+        font-size:22px;
+    }
+
+    .li-department{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .link-department{
+        font-size:18px;
+    }
+    
+}

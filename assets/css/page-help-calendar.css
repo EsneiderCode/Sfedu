@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Myriad Pro;
+    src: local('MyriadPro'), url("https://ictis.sfedu.ru/wp-content/themes/my_theme/fonts/MYRIADPRO-REGULAR.woff") format('truetype');
+}
+
+@font-face {
+    font-family: Roboto Regular;
+    src: local('RobotoRegular'), url("https://ictis.sfedu.ru/wp-content/themes/my_theme/fonts/Roboto-Regular.ttf") format('truetype');
+}
+
+html {
+    margin-top: 0 !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Myriad Pro;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: #FAFAFA;
+    min-height: 100%;
+    overflow-x:hidden;
+}
+
+.principal-container-help-calendar {
+    position: absolute;
+    width: 1368px;
+    min-height: 100%;
+    background: #FAFAFA;
+}
+
+.container-content {
+    position: relative;
+    width: 1035px;
+    min-height: 100vh;
+    left: 333px;
+    top:32px;
+    background: white;
+    padding: 16px 32px 0px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-page{
+    font-family: Myriad Pro;
+    font-weight: 400;
+    font-size: 36px;
+    color: #154385;
+}
+
+.google-calendar{
+    margin-bottom:70px;
+}
+
+.general-info-container h3, .mac-os h3, .iphone h3, .google-calendar h3{
+font-family: Roboto Regular;
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+color: #154385;
+}
+
+ .general-info-container h3, .mac-os h3, .iphone h3, .google-calendar h3, .general-info-container, .mac-os, .iphone{
+    margin-bottom:24px;
+}
+
+.iphone a, .mac-os a{
+    margin-bottom:16px;
+}
+
+ul{
+    margin: 16px 0 0 20px;
+}
+
+li{
+    color:#B2BFD1;
+    margin-bottom:16px;
+}
+
+li:last-child{
+    margin-bottom:0;
+}
+
+li span{
+    color: #000;
+}
+
+
+.title-page{
+    margin-bottom:18px;
+}
+
+.link-help{
+    color: #1E66CD;
+}
+
+.link-help:last-child{
+    word-wrap: break-word;
+}
+
+
+@media screen and (max-width: 600px) {
+    .principal-container-help-calendar {
+        width: 376px;
+        background: #FAFAFA;
+    }
+
+    .container-content {
+        width: 376px;
+        min-height: 100vh;
+        left: 0;
+        top: 80px;
+        margin-bottom:80px;
+        background: white;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title-page{
+      font-size:24px;
+    }
+    
+    .general-info-container h3, .mac-os h3, .iphone h3, .google-calendar h3{
+      font-size:20px;
+    }
+
+}

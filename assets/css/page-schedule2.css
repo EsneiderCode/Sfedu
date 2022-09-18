@@ -1,0 +1,298 @@
+@font-face {
+    font-family: Myriad Pro;
+    src: local('MyriadPro'), url("https://ictis.sfedu.ru/wp-content/themes/my_theme/fonts/MYRIADPRO-REGULAR.woff") format('truetype');
+}
+
+@font-face {
+    font-family: Roboto Regular;
+    src: local('RobotoRegular'), url("https://ictis.sfedu.ru/wp-content/themes/my_theme/fonts/Roboto-Regular.ttf") format('truetype');
+}
+
+ html {
+      margin-top: 0 !important;
+  }
+
+  * {
+      padding: 0;
+      margin: 0;
+      font-family: Myriad Pro;
+  }
+  
+  body {
+      display: flex;
+      justify-content: center;
+      background: #FAFAFA;
+      min-height: 100%;
+      overflow-x:hidden;
+  }
+
+  .principal-container-schedule {
+    position: absolute;
+    width: 1368px;
+    min-height: 100%;
+    background: #FAFAFA;
+}
+
+.container-content {
+    position: relative;
+    width: 1035px;
+    min-height: 100vh;
+    left: 333px;
+    top: 30px;
+    background: white;
+    padding: 32px;
+  }
+
+  .title-schedule{
+    font-family: Myriad Pro;
+    font-weight: 400;
+    font-size: 36px;
+    color: #154385;
+  }
+
+  #form-schedule{
+    margin-top:29px;
+    height:28px;
+    display:flex;
+    flex-direction:row;
+    margin-bottom:24px;
+  }
+
+  #schedule-input-text{
+    width:420px;
+    padding:5px 8px;
+    background: #FFFFFF;
+    border: 1px solid #436088;
+    border-radius: 2px 0px 0px 2px;
+  }
+
+  #schedule-input-text:active{
+    outline:none;
+    border: 1px solid #436088;
+  }
+
+  .button-search-schedule{
+    width:68px;
+    padding:6px 12px;
+    background: #FFFFFF;
+    border: 1px solid #436088;
+    border-radius: 2px 0px 0px 2px;
+    cursor:pointer;
+  }
+
+  .group-student{
+    font-family: Roboto Regular;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom:30px;
+    font-weight:400;
+  }
+
+  .view-schedule-container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:29px;
+  }
+
+  .style-schedule-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:68px;
+    margin-right:28px;
+  }
+
+  .option-view-schedule{
+    font-family: Roboto Regular;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-decoration-line: underline;
+    color: #154385;
+    margin-right:16px;
+  }
+
+  .icon-view-schedule {
+    width:24px;
+    height:24px;
+  }
+
+  .info-img{
+    width:12px;
+    height:12px;
+    margin-bottom:10px;
+    margin-left:-14px;
+  }
+
+  .weeks-section{
+    display: flex;
+    flex-direction:row;
+    margin-bottom:24px;
+  }
+
+  .weeks-section ul {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    width:100%;
+  }
+  .weeks-section ul li{
+    list-style: none;
+  }
+
+  .text-week{
+    align-items: center;
+    padding: 8px 12px;
+    background: #154385;
+    border-radius: 2px; 
+    font-family: Roboto Regular;
+    font-size: 16px;
+    color: #F7F7F7;
+  }
+
+  .number-week{
+    font-family: Roboto Regular;
+    font-size: 16px;
+    text-decoration-line: underline;
+    color: #154385;
+  }
+
+  .active{
+    color: #808080;
+  }
+ 
+  .table-schedule-container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    padding:4px;
+    background: #EAEAEA;
+    margin-bottom:40px;
+  }
+
+  .class-container{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .day-and-date {
+    padding:8px;
+    background: #FFFFFF;
+    margin:4px;
+  }
+
+  .day-and-date h3{
+    font-family: Roboto Regular;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    color: #373737;
+  }
+
+  /* Start practice lessons styles */
+
+  .practice-info-container{
+    display:flex;
+    flex-direction:row;
+  }
+
+  .options-class-container{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+  }
+
+  .practice-time, .auditory, .teacher-info-container{
+    margin:4px;
+    background: #ffffff;
+  }
+
+  .practice-time, .auditory {
+    display:grid;
+    place-content:center;
+    padding: 21px 8px;
+    width:120px;
+  }
+
+  .practice-info-teacher-container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+  }
+
+  .teacher-info-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    position:relative;
+    padding:8px;
+    width:100%;
+  }
+
+  .subject-name, .teacher-name{
+    font-family: Roboto Regular;
+    font-weight: 400;
+    font-size: 14px;
+    color: #141414;
+    margin-bottom:10px;
+  }
+
+  .type-class{
+    color: rgba(123, 125, 127, 1);
+  }
+
+  .practice-color-left{
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background: #95C11E;
+  }
+
+
+  /* End practice classess  styles*/
+
+  /* Start lecture lessons styles */
+
+
+  .lecture-info-container{
+    display:flex;
+    flex-direction:row;
+  }
+
+  .lecture-time, .link-lms, .teacher-info-container{
+    margin:4px;
+    background: #ffffff;
+  }
+
+  .lecture-time, .link-lms {
+    display:grid;
+    place-content:center;
+    padding: 21px 8px;
+    width:120px;
+  }
+
+  .link-lms{
+    pointer-events: none;
+    text-decoration:underline;
+    color: rgb(93, 94, 293);
+  }
+
+  .lecture-info-teacher-container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+  }
+
+  .lecture-color-left{
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background: #2C2E83;
+    }
+
+  /* End lecture lessons styles */
